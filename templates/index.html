@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="align-items: center;">
+
+    <h1 style="text-align: center;">Escribe un Prompt:</h1>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <form method="POST">
+            <label for="prompt">Prompt:</label><br>
+            <textarea id="prompt" name="prompt" rows="4" cols="50"></textarea><br><br>
+            <button type="submit">Enviar Prompt</button>
+        </form>
+    </div>
+
+    <div class="response-box">
+        <h3>Respuesta de la API:</h3>
+        <p>{{ response_text if response_text else 'Aún no se ha enviado un prompt.' }}</p>
+    </div>
+</body>
+</html>
