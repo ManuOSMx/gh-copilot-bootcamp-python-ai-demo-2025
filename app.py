@@ -12,8 +12,7 @@ def index():
 
         if prompt:
             try:
-                response_text = send_prompt_to_AzureOpenAI(prompt, "spanish")
-                translate_resp = send_prompt_to_AzureOpenAI(response_text, "english")
+                response_text = send_prompt_to_AzureOpenAI(prompt)
             except Exception as e:
                 response_text = f'Ocurrió un error: {e}'
 
