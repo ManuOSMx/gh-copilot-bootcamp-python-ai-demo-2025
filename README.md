@@ -58,7 +58,9 @@ Para inscribirte en este curso, visita [aka.ms/GitHubCopilotBootcampLATAM](https
 > [!NOTE]
 > En el caso de Windows los comandos pueden variar segun uses **PowerShell** ó **CMD**. 
 
-4. Debes crear un archivo llamado `.env`
+4. Instala los requerimientos necesarios: `pip install -r requirements.txt`
+
+5. Debes crear un archivo llamado `.env`
     - Dentro del archivo `.env` debes colocar lo siguiente:
     ```md
     AZURE_OPENAI_API_KEY=YourAPIKey
@@ -66,9 +68,10 @@ Para inscribirte en este curso, visita [aka.ms/GitHubCopilotBootcampLATAM](https
     DEPLOYMENT_NAME=YourModel
     ```
     - Sustituye cada `YourAPIKey`, `your-endpoint.com`, `YourModel` con tus verdaderas credenciales.
-5. Ejecuta el proyecto con: `python3 app.py`
-6. Salir del entorno virtual: `deactivate`
- 
+
+6. Ejecuta el proyecto con: `python3 app.py`
+7. Salir del entorno virtual: `deactivate`
+
 ## Estructura del proyecto:
  ```md
  mi_proyecto/          # gh-copilot-bootcamp-python-ai-demo-2025
