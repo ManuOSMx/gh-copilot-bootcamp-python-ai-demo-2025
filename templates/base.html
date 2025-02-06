@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GH Copilot Web AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Features-Large-Icons-icons.css') }}">
+</head>
+<body id="page-top">
+    <section class="text-center download-section content-section" id="download" style="background: url('{{ url_for('static', filename='img/md.jpeg') }}') no-repeat; background-size: cover;">
+        {% block content %} {% endblock %}
+    </section>
+    <footer>
+        <div class="container text-center">
+            <p>GitHub Copilot Bootcamp 2025</p>
+            <p>With&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-heart-fill"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path></svg>&nbsp; ManuOSMx.</p>
+        </div>
+    </footer>
+</body>
+</html>
